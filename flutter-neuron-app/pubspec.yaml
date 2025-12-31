@@ -1,0 +1,37 @@
+name: flutter_neuron_app
+description: A Flutter application that utilizes a neural network for chat and learning.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.0.0
+  http: ^1.2.1
+  # sqflite: ^2.0.0+4  # sqflite is not supported on web
+  path_provider: ^2.0.2
+  shared_preferences: ^2.0.15
+  sembast: ^3.1.0
+  sembast_web: ^2.4.3
+  path: ^1.8.2
+  flutter_webrtc: ^0.10.0 # WebRTC support
+  web_socket_channel: ^2.4.0 # For signaling
+  shelf: ^1.4.2
+  shelf_web_socket: ^3.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/models/

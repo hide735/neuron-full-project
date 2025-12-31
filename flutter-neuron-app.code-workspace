@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "flutter-neuron-app"
+		},
+		{
+			"path": "signaling_server"
+		}
+	],
+	"settings": {}
+}
