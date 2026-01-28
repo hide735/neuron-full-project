@@ -1,8 +1,8 @@
-import 'neuron.dart';
-
 /// ローカルに保持されるニューロンモデルの集合を表します。
 ///
 /// このモデルは現在、単一の全結合層として機能します。
+import 'neuron.dart';
+
 class LocalModel {
   /// ニューロンのリスト
   List<Neuron> neurons;

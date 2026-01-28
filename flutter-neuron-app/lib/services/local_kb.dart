@@ -1,5 +1,3 @@
-// ...existing code...
-
 import 'dart:async';
 import 'dart:math';
 
@@ -275,8 +273,7 @@ class LocalKB {
   String _extractTextFromHtml(String html) {
     // script/style を除去
     var t = html.replaceAll(
-        RegExp(r'<script.*?>.*?</script>',
-            caseSensitive: false, dotAll: true),
+        RegExp(r'<script.*?>.*?</script>', caseSensitive: false, dotAll: true),
         ' ');
     t = t.replaceAll(
         RegExp(r'<style.*?>.*?</style>', caseSensitive: false, dotAll: true),

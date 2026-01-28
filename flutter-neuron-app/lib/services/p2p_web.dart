@@ -100,15 +100,13 @@ class P2pService {
     });
 
     pc.onIceCandidate = (candidate) {
-      if (candidate != null) {
-        _sendSignalingMessage({
-          'type': 'ice-candidate',
-          'to': peerId,
-          'candidate': candidate.candidate,
-          'sdpMid': candidate.sdpMid,
-          'sdpMLineIndex': candidate.sdpMLineIndex,
-        });
-      }
+      _sendSignalingMessage({
+        'type': 'ice-candidate',
+        'to': peerId,
+        'candidate': candidate.candidate,
+        'sdpMid': candidate.sdpMid,
+        'sdpMLineIndex': candidate.sdpMLineIndex,
+      });
     };
 
     pc.onConnectionState = (state) {
